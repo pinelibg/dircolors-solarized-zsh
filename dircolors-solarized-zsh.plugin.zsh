@@ -6,9 +6,9 @@ _SOLARIZED_DIRCOLORS_PATH="${${(%):-%N}:A:h}/dircolors-solarized/dircolors.${DIR
 
 if [[ -f "${_SOLARIZED_DIRCOLORS_PATH}" ]]; then
   if type gdircolors &>/dev/null; then
-    eval "$(gdircolors ${_SOLARIZED_DIRCOLORS_PATH})"
+    eval "$(gdircolors -b ${_SOLARIZED_DIRCOLORS_PATH})"
   else
-    eval "$(dircolors ${_SOLARIZED_DIRCOLORS_PATH})"
+    eval "$(dircolors -b ${_SOLARIZED_DIRCOLORS_PATH})"
   fi
 else
   echo "Theme file ${_SOLARIZED_DIRCOLORS_PATH} not found"
