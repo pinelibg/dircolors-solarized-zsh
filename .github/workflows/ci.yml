@@ -85,3 +85,5 @@ jobs:
             ls --color=always test_dir
           fi
         '
+      env:
+        TERM: xterm-256color
