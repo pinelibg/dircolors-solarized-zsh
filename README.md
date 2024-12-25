@@ -4,6 +4,13 @@ This is a repository of a zsh plugin that enables the [Solarized Color Theme for
 
 ## Installation
 
+### [zinit](https://github.com/zdharma-continuum/zinit)
+
+```sh
+DIRCOLORS_SOLARIZED_ZSH_THEME="256dark"
+zinit light pinelibg/dircolors-solarized-zsh
+```
+
 ### [zplug](https://github.com/zplug/zplug)
 
 Adding the following to your `.zshrc`
